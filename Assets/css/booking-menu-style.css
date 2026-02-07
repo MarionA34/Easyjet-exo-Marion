@@ -5,12 +5,11 @@
 .booking-menu {
   height: 430px;
   width: 300px;
-  padding: 12px;
+  padding: 8px 12px;
   border-radius: 4px;
   font-size: 13px;
   box-shadow: 0 0 6px grey;
   background-color: white;
-  margin: 20px 0px;
 }
 
 /* CASE A COCHER ALLER SIMPLE */
@@ -23,8 +22,8 @@
 }
 
 .checkbox input {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 
 /* PREMIER BLOC DESTINATIONS */
@@ -66,20 +65,21 @@
 .dates-picker {
   border: 1px solid #cfcfcf;
   padding: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #ff7800;
   width: 240px;
 }
 
-.dates-picker div {
+.dates-picker > div:nth-child(2) {
   width: 180px;
   border-bottom: 1px solid #cfcfcf;
   margin: 0 auto;
 }
 
-.dates-picker p {
-  padding: 5px;
+.dates-picker > div:nth-child(odd) {
+  padding: 7px 0px;
   display: flex;
+  gap: 5px;
   align-items: center;
 }
 
@@ -97,16 +97,23 @@
   align-items: center;
 }
 
+.counter-div {
+  display: flex;
+  align-items: center;
+}
+
 .quantity button {
   background-color: unset;
   border: none;
   font-size: 20px;
-  /* color: #ff7800; */
 }
 
 .quantity > div span {
   font-weight: bold;
   font-size: 20px;
+  display: block;
+  width: 30px;
+  text-align: center;
 }
 
 /* BOUTON AFFICHAGE */

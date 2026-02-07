@@ -1,7 +1,10 @@
-body {
+*,
+a,
+footer {
   font-family:
     easyJet Rounded Book,
     sans-serif;
+  box-sizing: border-box;
 }
 
 body a {
@@ -56,6 +59,7 @@ header button {
 
 .beach-section {
   margin-bottom: 50px;
+  position: relative;
 }
 
 .beach-section img {
@@ -65,108 +69,87 @@ header button {
   display: block;
 }
 
-.beach-relative {
-  position: relative;
-}
-
 .beach-absolute {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 70%;
+  top: 20px;
+  height: 430px;
   width: 100vw;
 }
 
-.partie-beach {
+.booking-menu-container {
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.header-right {
-  height: 430px;
-  width: 250px;
-  margin: 20px;
+.right-column {
+  width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: white;
 }
 
-.header-right p:first-child {
-  font-family: easyJet Headline;
+.right-column-title {
+  font-family:
+    easyJet Headline,
+    sans serif;
   font-size: 50px;
-  color: white;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
-.header-right p:nth-child(2) {
-  font-family: easyJet Rounded Book;
-  font-size: 18px;
-  color: white;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
-
-.header-right p:nth-child(3) {
-  font-family: easyJet Rounded Book;
-  font-size: 15px;
-  color: white;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
-
-.header-right p:nth-child(3) > span {
+.right-column > div p:nth-child(2) {
   font-size: 50px;
-  display: block;
 }
 
-.header-right button {
+.right-column button {
   background-color: #fe5200;
   border: none;
-  padding: 8px 20px;
+  padding: 10px 30px;
   color: white;
   border-radius: 2px;
+  font-size: 16px;
   align-self: flex-start;
 }
 
-.beach-absolute-bottom {
+/* BEACH WHITE PART */
+
+.beach-white-absolute {
   position: absolute;
   bottom: 0px;
-  left: 0;
-  height: 20%;
+  height: 130px;
   width: 100vw;
-  background-color: #ffffffb5;
-  display: flex;
+  background-color: rgb(255, 255, 255, 0.7);
 }
 
-.partie-beach-bottom {
-  display: flex;
-  flex-direction: column;
+.container-white-bar {
+  height: 100%;
   padding: 10px;
-}
-
-.partie-beach-bottom > p {
-  font-size: 12px;
-  margin-top: 10px;
-}
-
-.destinations-phares {
-  display: flex;
-  justify-content: space-between;
-  flex: 1;
-}
-
-.destinations-phares-single {
   font-size: 13px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.destinations-phares-single button {
+.offers {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.offers button {
+  padding: 5px 10px;
   background-color: #fe5200;
-  border: none;
-  padding: 8px 10px;
   color: white;
+  border: none;
+  font-size: 14px;
   border-radius: 2px;
   align-self: flex-start;
+}
+
+.offers > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /*  WORLDWIDE DEFAULT */
@@ -302,7 +285,6 @@ header button {
   height: 220px;
   width: 285px;
   padding: 20px;
-  box-sizing: border-box;
   color: white;
   display: flex;
   flex-direction: column;
@@ -351,9 +333,10 @@ header button {
   background-color: #303030;
   color: white;
   flex-shrink: 0;
-  box-sizing: border-box;
   font-size: 12px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .bottom-carrousel div:hover {
@@ -361,11 +344,9 @@ header button {
   cursor: pointer;
 }
 
-.bottom-carrousel div i {
-  font-size: 30px;
-  position: absolute;
-  bottom: 20px;
-  left: 50px;
+.icon {
+  font-size: 60px;
+  align-self: center;
 }
 
 .bottom-carrousel > menu::-webkit-scrollbar {
