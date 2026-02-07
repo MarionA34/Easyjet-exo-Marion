@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+.booking-menu {
+  height: 430px;
+  width: 300px;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  box-shadow: 0 0 6px grey;
+  background-color: white;
+  margin: 20px 0px;
+}
+
+/* CASE A COCHER ALLER SIMPLE */
+
+.checkbox {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox input {
+  height: 30px;
+  width: 30px;
+}
+
+/* PREMIER BLOC DESTINATIONS */
+
+.destination-all {
+  display: flex;
+  justify-content: space-between;
+}
+
+.destination {
+  border: solid 1px #cfcfcf;
+  padding: 5px;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.destination-line {
+  width: 180px;
+  border-bottom: 1px solid #cfcfcf;
+  margin: 0 auto;
+}
+
+.destination input {
+  height: 34px;
+  border: none;
+}
+
+.icones-liste {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #ff7800;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+/* DEUXIEME BLOC DATES */
+
+.dates-picker {
+  border: 1px solid #cfcfcf;
+  padding: 2px;
+  margin-bottom: 10px;
+  color: #ff7800;
+  width: 240px;
+}
+
+.dates-picker div {
+  width: 180px;
+  border-bottom: 1px solid #cfcfcf;
+  margin: 0 auto;
+}
+
+.dates-picker p {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.calendar {
+  color: #ff7800;
+  font-size: 28px;
+}
+
+/* CHOIX QUANTITE */
+
+.quantity > div {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity button {
+  background-color: unset;
+  border: none;
+  font-size: 20px;
+  /* color: #ff7800; */
+}
+
+.quantity > div span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* BOUTON AFFICHAGE */
+
+.booking-menu > button {
+  background-color: #ff7800;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 2px;
+}
+
+/* MENTIONS BAS */
+
+.booking-menu-bottom {
+  color: #ff7800;
+}
+
+.booking-menu-bottom p:first-child {
+  margin-bottom: 10px;
+}
