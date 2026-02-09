@@ -17,6 +17,18 @@ body a {
   margin: 0px auto;
 }
 
+@media (max-width: 960px) {
+  .container {
+    width: 880px;
+  }
+}
+
+@media (max-width: 670px) {
+  .container {
+    width: 600px;
+  }
+}
+
 h2 {
   font-size: 16px;
   margin-bottom: 20px;
@@ -44,13 +56,57 @@ header a {
   text-decoration: none;
 }
 
-header button {
+header > div:first-child > button {
+  display: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+header > div:nth-child(2) > button {
   padding: 7px 10px;
   background-color: white;
   color: #fe5200;
   border: none;
   font-size: 16px;
   border-radius: 2px;
+}
+
+header > div:nth-child(2) > div > i {
+  display: none;
+  color: white;
+  font-size: 20px;
+  margin: 3px;
+}
+
+@media (max-width: 1115px) {
+  header > div > button:first-child {
+    display: block;
+  }
+
+  header > div:first-child > a {
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  header > div:nth-child(2) > button,
+  header > div:nth-child(2) > img {
+    display: none;
+  }
+  header > div:nth-child(2) > a {
+    display: none;
+  }
+  header > div:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+  }
+  header > div:nth-child(2) > div > i {
+    display: block;
+    align-self: center;
+  }
 }
 
 /*  MAIN STYLE */
@@ -111,6 +167,23 @@ header button {
   align-self: flex-start;
 }
 
+@media (max-width: 670px) {
+  .beach-section img {
+    display: none;
+  }
+  .beach-section {
+    width: 100vw;
+    height: 650px;
+    background-color: #f2f2f2;
+  }
+  .right-column {
+    display: none;
+  }
+  .booking-menu-container {
+    justify-content: center;
+  }
+}
+
 /* BEACH WHITE PART */
 
 .beach-white-absolute {
@@ -134,6 +207,17 @@ header button {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+
+@media (max-width: 1115px) {
+  .offers > div:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 670px) {
+  .offers > div:nth-child(3) {
+    display: none;
+  }
 }
 
 .offers button {
@@ -162,6 +246,20 @@ header button {
   overflow: hidden;
 }
 /* Le "Overflow:hidden" au-dessus sert à ce que les bords carrés des images ne dépassent pas des bords arrondis de leur section. */
+
+@media (max-width: 960px) {
+  .worldwide-default {
+    flex-direction: column;
+    width: 640px;
+  }
+}
+
+@media (max-width: 670px) {
+  .worldwide-default {
+    width: 300px;
+    height: 370px;
+  }
+}
 
 .worldwide-default p {
   font-size: 13px;
@@ -205,6 +303,25 @@ header button {
   object-fit: cover;
   object-position: right top;
   display: block;
+}
+
+@media (max-width: 670px) {
+  .worldwide-default {
+    height: 370px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 670px) {
+  .worldwide-default > img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 670px) {
+  .worldwide-2 {
+    height: 400px;
+  }
 }
 
 /* CARROUSEL-SECTION */
@@ -267,6 +384,12 @@ header button {
   scrollbar-width: none;
 }
 
+@media (max-width: 670px) {
+  .worldwide-default > img {
+    width: 300px;
+  }
+}
+
 /* TRIPLE IMG */
 
 .triple-img {
@@ -306,6 +429,43 @@ header button {
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 960px) {
+  .triple-img {
+    width: 640px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .triple-img > div > img {
+    width: 100%;
+  }
+  .triple-img > div:nth-child(3) {
+    flex: 1;
+  }
+}
+
+@media (max-width: 670px) {
+  .triple-img {
+    display: flex;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 600px;
+  }
+  .triple-img > div {
+    flex-shrink: 1;
+  }
+  .triple-img > div > img {
+    width: 300px;
+  }
+  .triple-img::-webkit-scrollbar {
+    display: none;
+  }
+  .triple-img > menu {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 /* CARROUSEL BOTTOM-CARROUSEL */
@@ -377,4 +537,16 @@ footer {
 .footer-div li {
   font-size: 12px;
   line-height: 18px;
+}
+
+@media (max-width: 670px) {
+  .footer-div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-div li {
+    display: none;
+  }
 }
