@@ -1,0 +1,11 @@
+@media (max-width: 1115px) {
+  .hidden-1115 {
+    display: none;
+  }
+  .shown-1115 {
+    display: inline;
+  }
+  .offers > div:nth-child(4) {
+    display: none;
+  }
+}

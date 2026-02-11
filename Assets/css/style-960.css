@@ -1,0 +1,30 @@
+@media (max-width: 960px) {
+  /*  WORLDWILDE DEFAULT */
+
+  .worldwide-default {
+    flex-direction: column;
+    width: 630px;
+  }
+
+  /*  TRIPLE IMG */
+
+  .triple-img {
+    width: 630px;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .triple-img > div:nth-child(3) {
+    width: 100%;
+  }
+
+  .triple-img > div:nth-child(3) img {
+    width: 100%;
+    object-position: top;
+  }
+
+  .padding-960 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

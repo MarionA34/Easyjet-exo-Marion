@@ -5,39 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./Assets/Imgs/tab-logo.png" />
     <title>EasyJet</title>
-    <link rel="stylesheet" href="./Assets/css/global.css" />
     <script
       src="https://kit.fontawesome.com/de9f314e8e.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./Assets/css/global.css" />
   </head>
   <body>
     <header>
       <div>
-        <button><i class="fa-solid fa-bars"></i></button>
+        <i class="fa-solid fa-bars phone-display shown-1115 white-icon"></i>
         <img src="./Assets/Imgs/ej-title.png" alt="Logo-Easyjet" />
-        <a href="">Infos de vol</a>
-        <a href="">Voitures/Autres services</a>
-        <a href="">Business</a>
-        <a href="">Hôtels</a>
-        <a href="">Mes réservations</a>
+        <a href="" class="hidden-1115">Infos de vol</a>
+        <a href="" class="hidden-1115">Voitures/Autres services</a>
+        <a href="" class="hidden-1115">Business</a>
+        <a href="" class="hidden-1115">Hôtels</a>
+        <a href="" class="hidden-1115">Mes réservations</a>
       </div>
       <div>
-        <button>S'enregistrer</button>
-        <div>
-          <i class="fa-regular fa-circle-user"></i>
+        <button class="hidden-670">S'enregistrer</button>
+        <div class="signup-div">
+          <i class="fa-regular fa-circle-user white-icon phone-display"></i>
           <a href="">Se connecter</a>
         </div>
-        <a href="">Aide</a>
-        <a href="">fr-FR</a>
-        <img src="./Assets/Imgs/drapeau.png" alt="Français" />
+        <a href="" class="hidden-670">Aide</a>
+        <a href="" class="hidden-670">fr-FR</a>
+        <img
+          src="./Assets/Imgs/drapeau.png"
+          alt="Français"
+          class="hidden-670"
+        />
       </div>
     </header>
     <main>
       <section class="beach-section">
-        <img src="./Assets/Imgs/beach.jpg" alt="plage" />
+        <img
+          src="./Assets/Imgs/beach.jpg"
+          alt="plage"
+          class="visibility-hidden"
+        />
         <div class="beach-absolute">
-          <div class="container booking-menu-container">
+          <div class="container booking-menu-container padding-960">
             <section class="booking-menu">
               <div class="checkbox">
                 <input type="checkbox" id="checkbox" />
@@ -109,7 +117,7 @@
                 <p>Nous compensons nos émissions carbone ></p>
               </div>
             </section>
-            <div class="right-column">
+            <div class="right-column hidden-670">
               <p class="right-column-title">
                 NAGER. DORMIR. MANGER. RECOMMENCER.
               </p>
@@ -126,7 +134,7 @@
           </div>
         </div>
         <div class="beach-white-absolute">
-          <div class="container container-white-bar">
+          <div class="container container-white-bar padding-960">
             <div class="offers">
               <div>
                 <p>Lisbonne</p>
@@ -181,7 +189,7 @@
           <button>En savoir plus</button>
         </div>
       </section>
-      <section class="container carrousel-section">
+      <section class="container carrousel-section padding-960">
         <div class="carrousel-card">
           <img src="./Assets/Imgs/carousel1.jpg" alt="femme en voiture" />
           <div class="place-bouton">
@@ -289,7 +297,7 @@
           </div>
         </div>
       </section>
-      <section class="container bottom-carrousel">
+      <section class="container bottom-carrousel padding-960">
         <h3>Comment pouvons-nous vous aider ?</h3>
         <menu>
           <div>
@@ -331,7 +339,7 @@
       <div class="container footer-div">
         <div>
           <p>Infos de vol</p>
-          <ul>
+          <ul class="hidden-670">
             <li>Flight Tracker</li>
             <li>Gérer les réservations</li>
             <li>Durabilité</li>
@@ -342,7 +350,7 @@
         </div>
         <div>
           <p>Service clientèle</p>
-          <ul>
+          <ul class="hidden-670">
             <li>Accessibilité</li>
             <li>La Charte du passager</li>
             <li>Centre Daide</li>
@@ -353,7 +361,7 @@
         </div>
         <div>
           <p>A propos d'Easyjet</p>
-          <ul>
+          <ul class="hidden-670">
             <li>Carrières</li>
             <li>Informations sur la compagnie</li>
             <li>easyJet Spirit</li>
@@ -362,7 +370,7 @@
         </div>
         <div>
           <p>Termes et conditions</p>
-          <ul>
+          <ul class="hidden-670">
             <li>Politique d'utilisation acceptée</li>
             <li>Produits dangereux et articles interdits</li>
             <li>Charte de distribution</li>

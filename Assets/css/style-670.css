@@ -1,0 +1,78 @@
+@media (max-width: 670px) {
+  .phone-display {
+    display: inline;
+  }
+  .hidden-670 {
+    display: none;
+  }
+
+  /* BEACH SECTION */
+
+  .booking-menu-container {
+    justify-content: center;
+  }
+
+  .visibility-hidden {
+    visibility: hidden;
+  }
+
+  .beach-section {
+    background-color: #f2f2f2;
+  }
+
+  .beach-white-absolute {
+    background-color: white;
+  }
+
+  .offers > div:nth-child(2) {
+    display: none;
+  }
+
+  /*  WORLDWILDE */
+
+  .worldwide-default {
+    width: 300px;
+  }
+
+  .worldwide-default > img {
+    height: 140px;
+    width: auto;
+  }
+
+  .worldwide-2 {
+    height: 400px;
+  }
+
+  /* TRIPLE IMG */
+
+  .triple-img {
+    width: auto;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  .triple-img > div:nth-child(3) {
+    width: auto;
+  }
+  .triple-img > div:nth-child(3) img {
+    width: 285px;
+  }
+  .triple-img::-webkit-scrollbar {
+    display: none;
+  }
+  .triple-img > menu {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* FOOTER */
+
+  .footer-div {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+}
